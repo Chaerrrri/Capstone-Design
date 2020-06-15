@@ -14,7 +14,9 @@ OCR을 이용한 한글 인쇄체 텍스트의 인식률에 비해 한글 필기
 * Goals, objectives (evaluation)
 
 PE92 data set에 대하여 클래스 별로 한글 낱글자 이미지를 인식하는 모델 구축
+
 비교 논문에서 사용된 모델보다 좀 더 효율적으로 동작하도록 개량해보며 정확도의 최고치인 90% 중후반대에 근접하게 도달하는 것을 목표
+
 사용 빈도가 높은 598개 클래스 데이터를 인식하는 모델의 성능 개선
 
 ## Results
@@ -39,14 +41,15 @@ PE92 data set에 대하여 클래스 별로 한글 낱글자 이미지를 인식
 - 음절통계_내림차순.xlsx: 음절통계를 빈도수에 따라 내림차순한 엑셀파일 - classes_598.txt 생성 시 활용
 
 [Result_capture]
+
 실제 test 결과(인식률)를 확인할 수 있음
 - Test_Results.hwp: 여러 test 결과를 포함하고 있음
 
-* Web link
+[Web link]
 
 PE92 data 참고 (github) https://github.com/daewonyoon/HangulDB
 - Download PE92_train zip file, PE92_test zip file
-0 Original Source of Codes/converthgu1.py
+- Original Source of Codes/converthgu1.py
 
 ## Conclusion
 * Summary, contribution, ...
