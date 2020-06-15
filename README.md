@@ -21,31 +21,32 @@ PE92 data set에 대하여 클래스 별로 한글 낱글자 이미지를 인식
 * Main code, table, graph, comparison, ...
 
 [Classes]
-- classes_598.txt: 598개 class에 해당하는 [낱글자이름 - 폴더이름] 파일
-- files_598.txt: 598개 class에 해당하는 [폴더이름] 파일
+classes_598.txt: 598개 class에 해당하는 [낱글자이름 - 폴더이름] 파일
+files_598.txt: 598개 class에 해당하는 [폴더이름] 파일
 
 [Codes]
-- converthgu1.py: hgu1 file을 png file로 변환해줌
-- make_class_598.py: classes_598.txt를 읽어 폴더이름만 읽어서 files_598.txt 생성 (classes_598.txt이 있는 폴더에서 run)
-- make_folder_598.py: classes_598.txt를 읽어 폴더이름만 읽어서 전체 2350개 클래스의 train/test folder 중, 읽었던 598개 클래스에 해당하는 폴더만 복사하여 새로운 598개의 train/test folder 생성 (classes_598.txt이 있는 폴더에서 run)
-- data_augmentation.py: 598개 class의 train set에 대하여 data augmentation 적용하여 클래스 별로 30장씩 증량
+converthgu1.py: hgu1 file을 png file로 변환해줌
+make_class_598.py: classes_598.txt를 읽어 폴더이름만 읽어서 files_598.txt 생성 (classes_598.txt이 있는 폴더에서 run)
+make_folder_598.py: classes_598.txt를 읽어 폴더이름만 읽어서 전체 2350개 클래스의 train/test folder 중, 읽었던 598개 클래스에 해당하는 폴더만 복사하여 새로운 598개의 train/test folder 생성 (classes_598.txt이 있는 폴더에서 run)
+data_augmentation.py: 598개 class의 train set에 대하여 data augmentation 적용하여 클래스 별로 30장씩 증량
 (Jupyter Notebook에서 run - 경로 지정 유의)
-- Model_Augmented_train#.py: 개선된 모델 - Augmented data를 train하고 test (#: 학습 시 train data 내의 train set 비율)
+Model_Augmented_train#.py: 개선된 모델 - Augmented data를 train하고 test (#: 학습 시 train data 내의 train set 비율)
 (GPU 서버에서 run - 경로 지정 유의)
 
 [References]
-- GoogLenet 기반의 딥 러닝을 이용한 향상된 한글 필기체 인식_7.pdf: 참고/비교 대상이었던 논문
-- 현대 국어 사용 빈도 조사 2(2005).pdf: 클래스 축소 (사용빈도) 참고자료
-- 음절통계_내림차순.xlsx: 음절통계를 빈도수에 따라 내림차순한 엑셀파일 - classes_598.txt 생성 시 활용
+GoogLenet 기반의 딥 러닝을 이용한 향상된 한글 필기체 인식_7.pdf: 참고/비교 대상이었던 논문
+현대 국어 사용 빈도 조사 2(2005).pdf: 클래스 축소 (사용빈도) 참고자료
+음절통계_내림차순.xlsx: 음절통계를 빈도수에 따라 내림차순한 엑셀파일 - classes_598.txt 생성 시 활용
 
 [Result_capture]
 : 실제 test 결과(인식률)를 확인할 수 있음
-- Test_Results.hwp: 여러 test 결과를 포함하고 있음
+Test_Results.hwp: 여러 test 결과를 포함하고 있음
 
 * Web link
 
 PE92 data 참고 (github) https://github.com/daewonyoon/HangulDB
-Download PE92_train zip file, PE92_test zip file
+D
+ownload PE92_train zip file, PE92_test zip file
 Original Source of Codes/converthgu1.py
 
 ## Conclusion
