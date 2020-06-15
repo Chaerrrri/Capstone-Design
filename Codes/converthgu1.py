@@ -1,3 +1,5 @@
+# From https://github.com/daewonyoon/HangulDB/blob/master/converthgu1.py
+
 import sys
 import os
 
